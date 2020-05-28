@@ -1,8 +1,26 @@
 [
   {
-    "name": "My new project",
-    "directory": "00-my-new-project",
-    "description": "This is my new project.",
+    "name": "Chess AI",
+    "directory": "",
+    "description": "Research into how existing Chess AI work, both the traditional and machine learning variants. Look into creating a few prototype Chess AI. The goal is to learn more about what makes a good Chess AI and have a few own prototypes. Making prototypes could give more insights in possible pitfalls of creating a Chess AI.",
     "status": "proposal"
-  }  
+  },
+  {
+    "name": "Database System",
+    "directory": "",
+    "description": "Research into what makes current (relational) databases fast. Learn from these methods and develop a prototype for a database system that's built as a library rather than as a server. The goal is to develop an easy-to-use database system that does not require eg. the overhead of connection pooling to communicate with a separate server.",
+    "status": "proposal"
+  },
+  {
+    "name": "Data Extrapolation for Compression and Other Applications",
+    "directory": "",
+    "description": "With software like Topaz AI Gigapixel, low-resolution images can be upscaled to large resolutions. This is something that was previously considered impossible, since you cannot extract more information from what you have. The key is a trained machine learning model that has an idea of what things should look like, upscaled. Obviously the algorithm isn't perfect and does not reproduce the exact original data. The research is about whether and how these techniques could be applied in other ways. If any methods are found, prototypes of possible applications can be developed.",
+    "status": "proposal"
+  },
+  {
+    "name": "True Random Number Generation",
+    "directory": "",
+    "description": "True random number generators seem to get their randomness from using high-entropy inputs. The highest form of entropy seems to have been achieved by using radio noise. Research into the techniques used in actual true random number generators like random.org, develop a custom prototype that experiments with creating a true random number generator.",
+    "status": "proposal"
+  }
 ]
