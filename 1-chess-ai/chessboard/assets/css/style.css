@@ -1,0 +1,13 @@
+.chess-board {
+  width: 480px;
+  height: 480px;
+  border: 0.5px solid black;
+}
+
+div {
+  /* 1/8th of board */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-flow: wrap;
+}
