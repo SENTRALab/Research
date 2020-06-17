@@ -1,0 +1,60 @@
+.cell {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+.row {
+  height: 64px;
+}
+
+.row:nth-child(odd) .cell:nth-child(odd),
+.row:nth-child(even) .cell:nth-child(even) {
+  background-color: #ddd;
+}
+
+.row:nth-child(odd) .cell:nth-child(even),
+.row:nth-child(even) .cell:nth-child(odd) {
+  background-color: #520;
+}
+
+.highlight {
+  box-shadow: inset 0 0 8px yellow;
+}
+
+.king, .queen, .bishop, .knight, .rook, .pawn {
+  background-image: url("../media/pieces/pieces.svg");
+  background-size: 360px 120px;
+}
+
+.white {
+  background-position-y: 0;
+}
+
+.black {
+  background-position-y: 60px;
+}
+
+.king {
+  background-position-x: 0;
+}
+
+.queen {
+  background-position-x: -60px;
+}
+
+.bishop {
+  background-position-x: -120px;
+}
+
+.knight {
+  background-position-x: -180px;
+}
+
+.rook {
+  background-position-x: -240px;
+}
+
+.pawn {
+  background-position-x: -300px;
+}
