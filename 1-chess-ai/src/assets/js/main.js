@@ -1,12 +1,15 @@
 $(function () {
-  const chess = new Chess();
-
   const board = $("#chessboard");
   const boardSize = 64;
   const rank = ["A", "B", "C", "D", "E", "F", "G", "H"];
   const file = [8, 7, 6, 5, 4, 3, 2, 1];
   const cells = {};
 
+  // load starting position
+  const chess = new Chess();
+  chess.loadFEN("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
+  console.log(chess.board.pieceCoords);
+  
   generateBoard();
   updateBoard();
 
@@ -47,10 +50,17 @@ $(function () {
     return rank[x] + file[y];
   }
 
+  function toXY(coordinate) {
+    return {
+      x: rank.indexOf(coordinate[0]),
+      y: file.indexOf(parseInt(coordinate[1]))
+    };
+  }
+
   function updateBoard() {
     for (var y = 0; y < 8; y++) {
       for (var x = 0; x < 8; x++) {
-        const piece = chess.board[y][x];
+        const piece = Chess.piece.toHumanInfo(chess.board.get(x, y));
 
         if (!piece) {
           continue;
